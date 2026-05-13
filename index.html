@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ГеоКран — Геодезическая съёмка подкрановых путей</title>
+  <meta name="description" content="Геодезическая съёмка, выверка и рихтовка подкрановых путей. Точность до ±0,5 мм. Выезд в день обращения.">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Шапка */
+    header {
+      background: #1E3A5F;
+      color: white;
+      padding: 1rem 0;
+    }
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    .logo span {
+      color: #F97316;
+    }
+    nav a {
+      color: white;
+      margin-left: 2rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: #F97316;
+    }
+
+    /* Главный экран */
+    .hero {
+      padding: 4rem 0;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1625258902940-4eeb36a70b9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+      background-size: cover;
+      color: white;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+    .btn {
+      display: inline-block;
+      background: #F97316;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #EA580C;
+    }
+
+    /* Услуги */
+    .services {
+      padding: 4rem 0;
+      background: #f5f5f5;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 3rem;
+      color: #1E3A5F;
+    }
+    .service-card {
+      background: white;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 2rem;
+    }
+    .service-card h3 {
+      color: #1E3A5F;
+      margin-bottom: 1rem;
+    }
+
+    /* Преимущества */
+    .advantages {
+      padding: 4rem 0;
+    }
+    .advantage-item {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .advantage-number {
+      font-size: 2.5rem;
+      color: #F97316;
+      font-weight: bold;
+    }
+
+    /* Контакты */
+    .contacts {
+      padding: 4rem 0;
+      background: #1E3A5F;
+      color: white;
+    }
+    .contacts-form {
+      max-width: 500px;
+      margin: 2rem auto 0;
+    }
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 5px;
+    }
+
+    /* Футер */
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background: #0D2B47;
+      color: white;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Шапка -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">Гео<span>Кран</span></div>
+        <nav>
+          <a href="#services">Услуги</a>
+          <a href="#advantages">Преимущества</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Главный экран -->
+  <section class="hero">
+    <div class="container">
+      <h1>Геодезическая съёмка подкрановых путей</h1>
+      <p>Точность до ±0,5 мм. Выезд инженера в день обращения по Москве и МО. Отчёты по СП 126.13330.2017 и ПБ 10-382-00.</p>
+      <a href="#contacts" class="btn">Получить консультацию</a>
+    </div>
+  </section>
+
+  <!-- Услуги -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">Наши услуги</h2>
+      <div class="service-card">
+        <h3>Съёмка подкрановых путей</h3>
+        <ul>
+          <li>Контроль ширины колеи (±0,5 мм)</li>
+          <li>Нивелирование рельсов</li>
+          <li>Продольные и поперечные профили</li>
+          <li>Составление технического отчёта</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>Выверка оборудования</h3>
+        <ul>
+          <li>Установка по осям (±0,5 мм)</li>
+          <li>Контроль горизонтальности</li>
+          <li>Работа с лазерными системами</li>
+          <li>Отчёт с графиками и схемами</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>Сопровождение рихтовки</h3>
+        <ul>
+          <li>Выезд инженера на весь срок работ</li>
+          <li>Контроль в реальном времени</li>
+          <li>Корректировка креплений</li>
+          <li>Акт выполненных работ</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Преимущества -->
+  <section id="advantages" class="advantages">
+    <div class="container">
+      <h2 class="section-title">Почему выбирают нас?</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 2rem; justify-content: center;">
+        <div class="advantage-item">
+          <div class="advantage-number">1</div>
+         <h3>Опыт 15+ лет</h3>
+          <p>Выполнили более 500 съёмок подкрановых путей на промышленных объектах России</p>
+        </div>
+        <div class="advantage-item">
+          <div class="advantage-number">2</div>
+          <h3>Точность ±0,5 мм</h3>
+          <p>Используем тахеометры Leica TS06 и нивелиры Trimble DiNi для высокоточных измерений</p>
+        </div>
+        <div class="advantage-item">
+          <div class="advantage-number">3</div>
+          <h3>Быстрый выезд</h3>
+          <p>Приезжаем на объект в день обращения по Москве и МО</p>
+        </div>
+        <div class="advantage-item">
+          <div class="advantage-number">4</div>
+          <h3>Официальные отчёты</h3>
+          <p>Составляем документацию по СП 126.13330.2017 и ПБ 10-382-00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contacts" class="contacts">
+    <div class="container">
+      <h2 class="section-title">Свяжитесь с нами</h2>
+      <div style="display: flex; flex-wrap: wrap; gap: 3rem; justify-content: center;">
+        <div style="flex: 1; min-width: 300px;">
+          <h3>Наши контакты</h3>
+          <p><strong>Телефон:</strong> <a href="tel:+79163875255">+7 (916) 387-52-55</a></p>
+          <p><strong>Email:</strong> <a href="mailto:day24@yandex.ru">day24@yandex.ru</a></p>
+          <p><strong>Адрес:</strong> г. Москва, ул. бульвар Матроса железяка, д. 31к1</p>
+          <p><strong>Режим работы:</strong> Пн–Пт: 9:00–18:00</p>
+        </div>
+        <div class="contacts-form" style="flex: 1; min-width: 300px;">
+          <h3>Оставьте заявку</h3>
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Ваше имя *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email">
+            </div>
+            <div class="form-group">
+              <label for="service">Услуга</label>
+              <select id="service" name="service">
+                <option value="съемка">Съёмка подкрановых путей</option>
+                <option value="выверка">Выверка оборудования</option>
+                <option value="рихтовка">Сопровождение рихтовки</option>
+                <option value="консультация">Консультация</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Описание задачи</label>
+              <textarea id="message" name="message" rows="4" placeholder="Например: нивелирование подкрановых путей мостового крана №3 в цехе №5"></textarea>
+            </div>
+            <button type="submit" class="btn">Отправить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 ГеоКран. Все права защищены.</p>
+      <p>
+        <a href="https://geokran.github.io/privacy">Политика конфиденциальности</a> |
+        <a href="https://geokran.github.io/agreement">Договор-оферта</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Простая обработка формы (замените на реальный бэкенд)
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Спасибо! Ваша заявка отправлена. Мы свяжемся с вами в ближайшее время.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
